@@ -1,16 +1,16 @@
 .profile-card {
-    background-color:  #315238;
+    background-color: #315238;
     border-radius: 10%;
     padding: 20px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
     text-align: center;
 }
 
-.profile-card img {
-    border-radius: 50%; 
-    width: 150px; 
+.profile-image {
+    border-radius: 50%;
+    width: 150px;
     height: 150px;
-    object-fit: cover; 
+    object-fit: cover;
     border: 3px solid white;
 }
 
@@ -22,7 +22,7 @@
 
 .socials a {
     color: white;
-    font-size: 24px; 
+    font-size: 24px;
     text-decoration: none;
     transition: color 0.3s ease;
     position: relative;
@@ -35,25 +35,26 @@
 
 .right-arrow,
 .left-arrow {
-    position: absolute; 
-    bottom: 25px; 
-    font-size: 24px; 
-    color: white; 
+    position: absolute;
+    bottom: 25px;
+    font-size: 24px;
+    color: white;
 }
 
 .right-arrow {
-    right: 25px; 
+    right: 25px;
 }
+
 .left-arrow {
-    left: 25px; 
+    left: 25px;
 }
 
 .buttonTryIt {
     display: inline-block;
     border-radius: 4px;
-    background-color: #ddeee6;
+    background-color: white;
     border: none;
-    color: #FFFFFF;
+    color: #315238;
     text-align: center;
     font-size: 15px;
     padding: 16px;
@@ -61,29 +62,69 @@
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
-   }
-   
-   .buttonTryIt span {
+}
+
+.buttonTryIt span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
-   }
-   
-   .buttonTryIt span:after {
+}
+
+.buttonTryIt span:after {
     content: '»';
     position: absolute;
     opacity: 0;
     top: 0;
     right: -15px;
     transition: 0.5s;
-   }
-   
-   .buttonTryIt:hover span {
+}
+
+.buttonTryIt:hover span {
     padding-right: 15px;
-   }
-   
-   .buttonTryIt:hover span:after {
+}
+
+.buttonTryIt:hover span:after {
     opacity: 1;
     right: 0;
-   }
+}
+
+.circleButton{
+    border:2px solid white;
+    border-radius:100px;
+    width:40px;
+    height:40px;
+    padding:5px;
+    margin: auto;
+}
+
+.circleButton i {
+    color: #315238;
+}
+  
+
+.profile-card .details {
+    text-align: left;
+    margin-top: 18px;
+    flex-direction: column;
+}
+
+.profile-card .details i {
+    align-items: center; /* Alinha o ícone verticalmente com o texto */
+    margin-bottom: 3px;
+    color: white;
+}
+
+.profile-card .details i span {
+    font-family: 'Arial', sans-serif; /* Definindo a fonte para o texto */
+    font-size: 15px;
+}
+
+.profile-card .details i.fa-map-marker {
+    margin-left: 3px;
+}
+
+.cardHeader{
+    text-align: left;
+    color: white;
+}
