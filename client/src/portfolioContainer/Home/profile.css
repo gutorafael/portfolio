@@ -1,5 +1,6 @@
+/*--------------------PROFILE CARD--------------------*/
 .profile-card {
-    background-color: #315238;
+    background-color: #187A3B;
     border-radius: 10%;
     padding: 20px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
@@ -11,7 +12,7 @@
     width: 150px;
     height: 150px;
     object-fit: cover;
-    border: 3px solid white;
+    border: 3px solid #F0F0F0;
 }
 
 .socials {
@@ -21,7 +22,7 @@
 }
 
 .socials a {
-    color: white;
+    color: #F0F0F0;
     font-size: 24px;
     text-decoration: none;
     transition: color 0.3s ease;
@@ -29,7 +30,7 @@
 }
 
 .socials a:hover {
-    color: #0077b5;
+    color: #2C9F5A;
 }
 
 
@@ -38,23 +39,32 @@
     position: absolute;
     bottom: 25px;
     font-size: 24px;
-    color: white;
+    color: #F0F0F0;
+    transition: 0.5s;
 }
 
 .right-arrow {
     right: 25px;
 }
 
+.right-arrow:hover {
+    right: 19px;
+}
+
 .left-arrow {
-    left: 25px;
+    left: 21px;
+}
+
+.left-arrow:hover {
+    left: 16px;   
 }
 
 .buttonTryIt {
     display: inline-block;
     border-radius: 4px;
-    background-color: white;
+    background-color: #F0F0F0;
     border: none;
-    color: #315238;
+    color: #187A3B;
     text-align: center;
     font-size: 15px;
     padding: 16px;
@@ -89,19 +99,33 @@
     right: 0;
 }
 
-.circleButton{
-    border:2px solid white;
-    border-radius:100px;
-    width:40px;
-    height:40px;
-    padding:5px;
+.circleButton {
+    border: none;
+    border-radius: 100px;
+    width: 60px;
+    height: 40px;
+    padding: 5px;
     margin: auto;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    background-color: #f0f0f0;
+    color: #187A3B;
+    cursor: pointer;
 }
 
-.circleButton i {
-    color: #315238;
+.circleButton.clicked i {
+    transform: translateY(-50px);
+    opacity: 0;
 }
-  
+
+.circleButton.clicked {
+    font-weight: bold; 
+}
+
 
 .profile-card .details {
     text-align: left;
@@ -110,13 +134,13 @@
 }
 
 .profile-card .details i {
-    align-items: center; /* Alinha o ícone verticalmente com o texto */
+    align-items: center;
     margin-bottom: 3px;
-    color: white;
+    color: #F0F0F0;
 }
 
 .profile-card .details i span {
-    font-family: 'Arial', sans-serif; /* Definindo a fonte para o texto */
+    font-family: 'Arial', sans-serif; 
     font-size: 15px;
 }
 
@@ -126,5 +150,77 @@
 
 .cardHeader{
     text-align: left;
-    color: white;
+    color: #F0F0F0;
+}
+
+/*--------------------PROFILE DETAILS--------------------*/
+
+.prfl-details{
+    color: #F0F0F0;
+    width: 65%
+}
+
+.prfl-details h1{
+    font-size: 70px;
+    line-height: 1.0;
+    margin-bottom: 17px;
+    margin-top: auto;
+}
+
+.biography{
+    display: inline-flex;
+    width: 97%;
+}
+
+.biography p{
+    color: #B0B0B0 ;
+    font-size: 18px;
+    margin-top: -4px
+}
+
+.iconContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px; 
+    margin: auto;
+    margin-left: 50px;
+    justify-items: center;
+    align-items: center;
+}
+
+.iconContainer a {
+    color: #187A3B;
+    border: 0.5px solid #2d3538;
+    background-color: #23292A;
+    border-radius: 20%;
+    font-size: 30px;
+    transition: 0.5s;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.iconContainer a:hover {
+    border: 0.5px solid #187A3B;
+    cursor: pointer;
+}
+
+.prfl-details h2{
+    color: #B0B0B0 ;
+}
+
+.profile-child{
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.cardContainer{
+    width: 250px;                 
+    height: 325px;
+    margin-left: 100px;
 }
