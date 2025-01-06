@@ -29,7 +29,7 @@ export default function Profile() {
     };
 
     return (
-        <div className='profile-div'>
+        <div className='profile-div' style={{backgroundColor: '#222826'}}>
             <div className='profile-child'>
                 <div className='prfl-details'>
                     <h1>Hi there! <br />I'm <span style={{ color: '#187A3B' }}>Gustavo Rodrigues</span></h1>
