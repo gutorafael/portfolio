@@ -1,10 +1,11 @@
-import Footer from './portfolioContainer/Footer/footer';
+import Jobs from './portfolioContainer/Jobs/jobs';
 import Profile from './portfolioContainer/Home/profile';
 
 function App() {
   return (
     <div className="App">
       <Profile />
+      <Jobs />
     </div>
   );
 }

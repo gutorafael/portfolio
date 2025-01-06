@@ -1,0 +1,121 @@
+.jobContainer {
+    background-color: #34403c;
+    text-align: center;
+    color: #187A3B;
+    padding: 20px;
+    position: relative;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.title h1, .title h2 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.title h1{
+    font-size: 100px;
+    opacity: 8%;
+    color: #B0B0B0;
+}
+
+.title h2 {
+    position: absolute; /* Coloca o h2 sobre o h1 */
+    top: 60px; /* Ajuste a posição para obter o efeito de sobreposição */
+    text-decoration: solid #187A3B;
+    color: #F0F0F0;
+    font-size: 35px;
+}
+
+.title hr{
+    position: absolute; /* Coloca o h2 sobre o h1 */
+    bottom: 12px; /* Ajuste a posição para obter o efeito de sobreposição */
+    background-color:#187A3B;
+    width: 250px;
+    height: 4px;
+    border: none
+}
+
+.cardsContainer {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.card {
+    background-color: #23292A;
+    border: 0.5px solid #2d3538;
+    border-radius: 9px;
+    padding: 10px;
+    color: #F0F0F0;
+    text-align: start;
+    flex: 1 1 45%;
+    position: relative;
+}
+
+.cardDate{
+    position:absolute;
+    right: 20px;
+    top: 7px
+}
+
+.swiperCard {
+    background-color: #23292A;
+    text-align: start;
+    padding: 20px;
+    border-radius: 9px;
+}
+
+.swiperCardHeader {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaço entre o ícone e o texto */
+    margin-bottom: 10px; /* Espaço entre o cabeçalho e o parágrafo */
+}
+
+.swiperCardHeader i {
+    color: #F0F0F0;
+    font-size: 20px;
+}
+
+.swiperCardHeader h2 {
+    font-family: 'Arial', sans-serif;
+    color: #F0F0F0;
+    font-size: 18px;
+    margin: 0; /* Remove margem padrão */
+}
+
+.swiperCard p {
+    color: #B0B0B0;
+    margin: 0;
+}
+
+.swiperCard a{
+    transition:all 0.5s ease;
+}
+
+.swiperCard a::after {
+    content: ' »';
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.swiperCard a:hover{
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.swiperCard a:hover::after {
+    opacity: 1;
+    margin-left: 5px;
+}
